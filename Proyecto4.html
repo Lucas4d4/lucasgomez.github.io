@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proyecto 4</title>
+<link rel="stylesheet" href="css/Principal.css">
+<link rel="stylesheet" href="css/ProyectosGeneral.css">
+<!-- Estilos de fuentes de Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Estilo de fuente: 'Inter' -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body class="bodyProyectos">
+<div class="divCabecera" style="height: 88px; ">
+	<a class="hijo mover-izquierda2" href="Perfil.html"><img class="editImagen" src="contenido/FotoLucas.jpg">&nbsp;&nbsp;LUCAS GASTON GOMEZ</a>
+	
+	<ul class="mover-derecha2">
+	<li><a href="Principal.html">HOME</a></li>
+	<li><a href="About.html">ABOUT</a></li>
+	<li><a href="Proyectos.html">PROJECTS</a></li>
+	<li><a href="Contact.html">CONTACT</a></li>
+	</ul>
+</div>
+<br>
+<div class="divExplicacion" style="transform:translate(-50%,2%);">
+<div class="divTitulos">
+<h1>PROYECTO 4: "Gestión sucursales"</h1>
+</div>
+<br><br>
+<h2>Lenguajes de programación utilizados: ASP.Net, C#, SQL.</h2>
+<br><br>
+<p>
+Sistema de gestión de sucursales con conexión a base de datos.
+<br>
+Es una página web bastante simple pero muy útil para manipular toda
+clase de instrucciones (listar, eliminar, modificar y agregar).
+<br><br>
+-Se utilizaron clases y métodos para organizar y no repetir código de manera
+innecesaria
+<br><br>
+-Se creó el formulario AgregarSucursal.aspx con los siguientes controles:
+<br>
+a) Agregar sucursales: Hyperlink que redirecciona a AgregarSucursal.aspx
+(Configurar la propiedad NavigateURL)
+<br><br>
+Listar sucursales: Hyperlink que redirecciona a ListarSucursal.aspx (Configurar
+la propiedad NavigateURL)
+<br><br>
+Eliminar sucursales: Hyperlink que redirecciona a EliminarSucursal.aspx
+(Configurar la propiedad NavigateURL)
+<br><br>
+b) Se utilizaron los textbox para los campos: nombre sucursal, descripción y
+dirección. Se agregaron validaciones para que no quede ninguno de ellos en
+blanco.
+<br><br>
+c) Se utilizó el dropdownlist de provincias, se cargaron con los datos de la
+tabla “Provincia” de la base de datos BDSucursales
+<br><br>
+d) Se utilizó el botón guardar para guardar los datos ingresados sobre la tabla
+sucursales.
+<br><br>
+e) Luego de agregar en la base de datos, se colocó el siguiente texto “La
+sucursal se ha agregado con éxito” en un Label.
+<br><br>
+-Se creó otro formulario llamado ListadoSucursales.aspx en donde se puede
+observar los datos de las sucursales.
+<br><br>
+-Se agregaron los siguientes controles:
+<br>
+a) Nuevamente tiene los hyperlink “Agregar sucursales”, “Listado de
+sucursales” y “Eliminar sucursal”que redireccionan a dichas páginas.
+<br><br>
+b) Se agregó un gridview que muestra la siguiente información de las
+sucursales: ID_SUCURSAL, NOMBRE, DESCRIPCIÓN, PROVINCIA, y DIRECCION.
+<br>
+Observar que no se muestra el ID de la provincia, sino su descripción.
+<br>
+Inicialmente la gridview muestra todos los datos de todas las sucursales.
+<br><br>
+c) Se agregó un botón llamado “Filtrar”, que permite filtrar según el
+ID_SUCURSAL ingresado en el textbox.
+<br><br>
+d) Se agregó un botón llamado “Mostrar todos”, que nuevamente muestra
+todas las sucursales.
+<br><br>
+-Se creó otro formulario llamado EliminarSucursales.aspx en donde se puede
+eliminar sucursales por ID.
+<br><br>
+-Se agregaron los siguientes controles:
+<br>
+a) Se agregó un Textbox para que el usuario pueda ingresar el número de la
+sucursal que desea eliminar. Se agregó un validador para que se ingrese un
+valor numérico.
+<br><br>
+b) Al hacer click sobre el botón eliminar, se eliminará según la ID_SUCURSAL
+ingresada en el Textbox. Si se ingresa un ID inexistente aparecerá un Label con
+el cartel “ID inexistente”.
+<br><br>
+c) Luego de eliminar de la base de datos, aparecerá el siguiente texto “La
+sucursal se ha eliminado con éxito” dentro de un Label.
+</p>
+</div>
+
+<!--
+ 
+AGREGAR UN DIV CON COLOR DEGRADADO PARA LA MUESTRA DE LA TRANSICIÓN DE IMÁGENES
+
+ -->
+
+<div class="container" style="transform:translate(-50%,20%);">
+<br>
+<h1>IMÁGENES DEL PROYECTO</h1>
+    <div class="wrapper">
+        <div class="wrapper-holder">
+          <div id="slider1"><img src="contenido/Imagenes Proyectos/Proyecto4/Proyecto4.png" class="sizeImage"></div>
+          <div id="slider2"><img src="contenido/Imagenes Proyectos/Proyecto4/Proyecto4_2.png" class="sizeImage"></div>
+          <div id="slider3"><img src="contenido/Imagenes Proyectos/Proyecto4/Proyecto4_3.png" class="sizeImage"></div>
+          <div id="slider4"><img src="contenido/Imagenes Proyectos/Proyecto4/Proyecto4_4.png" class="sizeImage"></div>
+        </div>
+    </div>
+
+</div>
+<br>
+<div class="divSecVideo">
+<br>
+<h1>VIDEO DEL PROYECTO</h1>
+<video class="videoMove" src="css/videoEjemplo.mp4" controls></video>
+
+</div>
+
+</body>
+</html>

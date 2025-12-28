@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/Principal.css">
+<link rel="stylesheet" href="css/Contact.css">
+<!-- Estilos de fuentes de Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Estilo de fuente: 'Roboto' -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+<title>Contact</title>
+</head>
+<body class="body4">
+<div class="divCabecera" style="height: 88px; ">
+	<a class="hijo mover-izquierda2" href="Perfil.html"><img class="editImagen" src="contenido/FotoLucas.jpg">&nbsp;&nbsp;LUCAS GASTON GOMEZ</a>
+	
+	<ul class="mover-derecha2">
+	<li><a href="Principal.html">HOME</a></li>
+	<li><a href="About.html">ABOUT</a></li>
+	<li><a href="Proyectos.html">PROJECTS</a></li>
+	<li><a href="Contact.html">CONTACT</a></li>
+	</ul>
+</div>
+
+<div class="divForm">
+<form id="contact-form" action="https://formspree.io/f/mnjqnkok" method="post">
+<table class="tableForm">
+<tr>
+<td>
+<h1 class="h1Contact">CONTACT ME</h1>
+</td>
+</tr>
+
+<tr>
+<td>
+<input type="text" name="name" minlength="2" maxlength="50" placeholder="Nombre y Apellido" class="textGeneral" required> 
+</td>
+</tr>
+
+<tr>
+<td>
+<input type="email" name="email" placeholder="Email (@gmail.com, @outlook.com, etc)" class="textGeneral" required>
+</td>
+</tr>
+
+<tr>
+<td>
+<input type="text" name="asunto" minlength="2" maxlength="50" placeholder="Asunto" class="textGeneral" required>
+</td>
+</tr>
+
+<tr>
+<td>
+<textarea name="mensaje" minlength="10" rows="6" cols="30" placeholder="Redacte un mensaje..." class="textGeneral" style="resize:none" required></textarea>
+</td>
+</tr>
+
+<tr>
+<td>
+<button type="submit" name="btnContact" class="btnEnviar">Enviar Mensaje</button>
+<br>
+<br>
+<p id="form-status"></p>
+<script src="javascript/Contact.js"></script>
+</td>
+</tr>
+</table>
+
+</form>
+
+</div>
+
+<!--  UTILIZAR FormSpree para realizar los formularios y envío de correos electrónicos  -->
+</body>
+</html>

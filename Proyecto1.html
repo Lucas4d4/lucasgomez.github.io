@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proyecto 1</title>
+<link rel="stylesheet" href="css/Principal.css">
+<link rel="stylesheet" href="css/ProyectosGeneral.css">
+<!-- Estilos de fuentes de Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Estilo de fuente: 'Inter' -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body class="bodyProyectos">
+
+<div class="divCabecera" style="height: 88px; ">
+	<a class="hijo mover-izquierda2" href="Perfil.html"><img class="editImagen" src="contenido/FotoLucas.jpg">&nbsp;&nbsp;LUCAS GASTON GOMEZ</a>
+	
+	<ul class="mover-derecha2">
+	<li><a href="Principal.html">HOME</a></li>
+	<li><a href="About.html">ABOUT</a></li>
+	<li><a href="Proyectos.html">PROJECTS</a></li>
+	<li><a href="Contact.html">CONTACT</a></li>
+	</ul>
+</div>
+
+<div class="divExplicacion">
+<div class="divTitulos">
+<h1>PROYECTO 1: "Project Bank"</h1>
+</div>
+<br><br>
+<h2>Lenguajes de programación utilizados: JavaScript, JSP (JavaServer Pages), MySQL,
+Html y CSS.</h2>
+<br><br>
+<p>Sistema de gestión para un banco en donde existen dos tipos de usuarios:
+administrador del banco y clientes.
+<br><br>
+Los usuarios que son administradores pueden realizar las siguientes acciones:
+<br><br>
+- Crear, modificar, eliminar y listar clientes para el banco. A cada cliente se le
+puede asignar un nombre de usuario y contraseña para que pueda acceder a
+la página web del banco. El administrador puede modificar la contraseña del
+cliente pero nunca el usuario del mismo.
+<br><br>
+-Crear, modificar, eliminar y listar cuentas y asignar cuentas a clientes. Una
+cuente puede pertenecer a un solo cliente. Se puede asignar un máximo de 3
+cuentas para un cliente. Al crear una cuenta, se le asigna automáticamente un
+monto inicial de $10000.
+<br><br>
+-Autorización de préstamos. El administrador puede autorizar o rechazar los
+préstamos solicitados por el cliente. Si se aprueba el préstamo entonces se le
+asignará al cliente el monto pedido.
+<br><br>
+Los usuarios que son clientes pueden realizar las siguientes acciones:
+<br><br>
+-El cliente puede seleccionar una cuenta y observar el historial de los
+movimientos realizados en esa cuenta.
+<br><br>
+-Transferencias a otros clientes: El cliente puede transferir dinero entre sus
+propias cuentas o a cuentas de otros clientes utilizando el CBU. Se puede
+realizar la transferencia mientras el usuario cuente con dinero disponible. Si no
+posee dinero no se podrá realizar la transferencia.
+<br><br>
+-Pedido de préstamo. El cliente puede pedir un préstamo de cierto dinero al
+banco, seleccionar la cantidad de cuotas en las que quiere abonarlo y elegir la
+cuenta en donde se le depositará el pago del préstamo. El banco recibirá el
+pedido y autorizará o no dicho préstamo.
+<br><br>
+-El cliente tiene un menú de pago de préstamos en donde figura las cuotas
+que debe pagar, puede pagar seleccionando la cuota y cuenta de donde sedescontará dicho gasto. Cada vez que se pague una cuota se guardará la
+fecha en la cual se pagó la misma.
+<br><br>
+- El cliente puede visualizar su información personal. No puede cambiar los
+datos, solo los visualizará.
+</p>
+</div>
+
+
+
+<div class="container">
+<br>
+<h1>IMÁGENES DEL PROYECTO</h1>
+    <div class="wrapper">
+        <div class="wrapper-holder">
+          <div id="slider1"><img src="contenido/Imagenes Proyectos/Proyecto1/Proyecto1.png" class="sizeImage"></div>
+          <div id="slider2"><img src="contenido/Imagenes Proyectos/Proyecto1/Proyecto1_2.png" class="sizeImage"></div>
+          <div id="slider3"><img src="contenido/Imagenes Proyectos/Proyecto1/Proyecto1_3.png" class="sizeImage"></div>
+          <div id="slider4"><img src="contenido/Imagenes Proyectos/Proyecto1/Proyecto1_4.png" class="sizeImage"></div>
+        </div>
+    </div>
+
+</div>
+<br>
+<div class="divSecVideo">
+<br>
+<h1>VIDEO DEL PROYECTO</h1>
+<video class="videoMove" src="css/videoEjemplo.mp4" controls></video>
+
+</div>
+
+
+
+</body>
+</html>
