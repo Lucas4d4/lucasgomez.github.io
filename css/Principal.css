@@ -1,0 +1,271 @@
+@charset "UTF-8";
+
+*{
+	margin:0;
+}
+
+body{
+	background-image:url('Fondo.webp');
+	background-size: cover; /* Image will cover the entire element */
+  background-repeat: no-repeat; /* Image will not repeat */
+  background-attachment:fixed /*Sirve para que la imagen quede fija al momento de ir bajando */
+}
+
+.editImagen{
+	width:55px;
+	height:55px;
+	border-radius:50px;
+}
+
+
+.divCabecera{
+	background-color:#ffffff;
+	position:relative; /* necesario para posicionar al hijo */
+	
+}
+
+.hijo {
+	font-family:fantasy;
+	font-size:18px;
+ position: absolute;      /* lo sacamos del flujo normal */
+  top: 50%;                /* movemos al centro verticalmente */
+  left: 50%;               /* movemos al centro horizontalmente */
+  transform: translate(-50%, -50%); /* centramos completamente */
+  width: 250px;
+  height: 60px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  border-style:none;
+  border-radius:6px;
+  cursor:pointer;
+  	transition: all 0.3s ease-in-out;
+  	text-decoration:none;
+}
+
+/* 📍 Modificadores reutilizables */
+.mover-izquierda {
+  left: 25%;               /* mueve hacia la izquierda */
+  transform: translate(-50%, -50%);
+}
+
+.mover-derecha {
+  left: 75%;               /* mueve hacia la derecha */
+  transform: translate(-50%, -50%);
+}
+
+.centrar {
+  left: 50%;               /* centro */
+  transform: translate(-50%, -50%);
+}
+
+/**
+position: relative en el contenedor → define el área donde se moverá el hijo.
+
+position: absolute en el hijo → permite ubicarlo exactamente donde quieras.
+
+top: 50%; left: 50%; transform: translate(-50%, -50%) → centra el elemento.
+
+Cambiando solo left, lo puedes mover a la izquierda o derecha sin perder el centrado vertical.
+**/
+
+/* CLASES ALTERNATIVAS */
+.mover-izquierda2{
+  left: 12%;               /* mueve hacia la izquierda */
+  transform: translate(-50%, -50%);	
+}
+
+.mover-derecha2{
+	left:80%;
+	transform:translate(-50%,9%);
+}
+
+.centrar2{
+	left:20%;
+	transform:translate(-50%,-50%);
+}
+
+
+.hijo:hover{
+	background-color:#00006a;
+	color:#ffffff;
+	 transform: translate(-50%,-50%) scale(1.05);
+}
+
+.hijo:active{
+	background-color:#00006a;
+	color:#ffffff;
+	 transform: translate(-50%,-50%) scale(1.0);	
+}
+
+
+
+ul{
+	display:flex;
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	position:absolute;
+	top:50%;
+	left:50%;
+	 transform: translate(-50%, -50%); 
+}
+
+li{
+	border-radius:6px;
+	display:inline-block;
+	margin-right:10px;
+}
+
+
+li a{
+	text-decoration:none;
+	background-color:#ffffff;
+	color:#000000;
+	font-family:fantasy;
+	font-size:18px;
+	font-style:normal;
+	padding:20px;
+	border-top-left-radius:6px;
+	border-top-right-radius:6px;
+	transition: all 0.3s ease-in-out;
+}
+
+li a:hover{
+	background-color:#00006a;
+	color:#ffffff;
+}
+
+
+.divRedes{
+	background-color:#ffffff;
+	color:#000000;
+	width:55px;
+	height:250px;
+	position:relative;
+	margin-top:10%;
+	margin-right:auto;
+	margin-left:0%;
+	border-top-right-radius:6px;
+	border-bottom-right-radius:6px;
+}
+
+.buttonRed{
+	position:absolute;
+	top:15%;
+	left:50%;
+	 transform: translate(-50%, -50%);
+	 cursor:pointer;
+	 border-style:none;
+	 border-radius:6px;
+}
+
+
+.designRed{
+	width:35px;
+	height:35px;
+	background-color:#ffffff;
+		margin:0;
+	padding:0;
+		align-items:center;
+	justify-content:center;
+	display:flex; /* USA flex PARA CENTRAR VERTICAL Y HORIZONTALMENTE */
+	padding:20px;
+	transition: all 0.3s ease-in-out;
+
+}
+
+.designRed:hover{
+	background-color:#c9c9c9;
+	transform: translate(-50%,-50%) scale(1.1);
+}
+
+
+.editRed{
+	width:30px;
+	height:30px;
+	display:block; /* SIRVE PARA QUE margin: auto FUNCIONE */
+	margin:0 auto; /* CENTRA LA IMAGEN HORIZONTALMENTE */
+}
+
+.buttonRed2{
+	position:absolute;
+	top:38%;
+	left:50%;
+	 transform: translate(-50%, -50%);
+	 cursor:pointer;
+	 border-style:none;
+	 border-radius:6px;	
+}
+
+
+
+.buttonRed3{
+	position:absolute;
+	top:62%;
+	left:50%;
+	 transform: translate(-50%, -50%);
+	 cursor:pointer;
+	 border-style:none;
+	 border-radius:6px;	
+}
+
+.buttonRed4{
+	position:absolute;
+	top:85%;
+	left:50%;
+	 transform: translate(-50%, -50%);
+	 cursor:pointer;
+	 border-style:none;
+	 border-radius:6px;	
+}
+
+
+.divCentral{
+	font-family:'Roboto', sans-serif;
+	font-size:20px;
+	position:absolute;
+	top:55%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	width:700px;
+	height:250px;
+	text-align:center;
+}
+
+p{
+	font-size:20px;
+	font-family:'Fira code', monospace;
+}
+
+.buttonProjects{
+	background-color:#fac205;
+	font-size:18px;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:50px;
+	padding-right:50px;
+	border-radius:3px;
+	border-style:none;
+	cursor:pointer;
+	transition: all 0.3s ease-in-out;
+	font-family:fantasy;
+	text-decoration:none;
+	color:#000000;
+}
+
+.buttonProjects:hover{
+	background-color:#000000;
+	color:#fac205;
+	transform:scale(1.05);
+}
+
+.buttonProjects:active{
+	background-color:#fac205;
+	color:#000000;
+	transform:scale(1.0);
+}
+
+

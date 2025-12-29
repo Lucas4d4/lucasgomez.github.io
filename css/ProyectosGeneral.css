@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+.bodyProyectos{
+		background-image:url("Fondo3.webp");
+	background-size: cover; /* Image will cover the entire element */
+  background-repeat: no-repeat; /* Image will not repeat */
+  background-attachment: fixed; /* This makes the background image static */
+  margin-bottom:400px;
+}
+
+
+.divExplicacion{
+	color:#F2F4F7;
+	width:70%;
+	height:auto;
+	position:relative;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,5%);
+	text-align:left;
+	font-family: 'Fira code', monospace;
+}
+
+.divTitulos{
+	height:60px;
+	text-align:center;
+	color:#7CC9FF;
+	font-family:'Roboto', sans-serif;
+}
+
+
+/* NO USAR EN ESTA SECCIÓN LOS divs CON COLORES PARA UTILIZARLO EN LAS EXPLICACIONES LARGAS, 
+CON EL COLOR DE FONDO ALCANZA*/
+
+/* USAR PARA LOS DIVS DE IMAGENES Y VIDEOS */
+.video-container,
+.img-container {
+  background: rgba(255,255,255,0.05); /* un toque suave */
+  padding: 20px;
+  border-radius: 12px;
+  backdrop-filter: blur(6px); /* bonito efecto en fondos oscuros */
+}
+
+/*
+COLORES A UTILIZAR EN LA EXPLICACIÓN DEL PROYECTO:
+Párrafos largos: #F2F4F7
+
+Títulos: #7CC9FF
+
+Resaltados: #5CE1E6
+
+Metadatos / texto secundario: #C9D1D9
+*/
+
+
+/* SLIDER (TRANSICIÓN) DE IMÁGENES */
+
+.container{
+	background-color: #000006;
+	background-image:  linear-gradient(#040438 1.1px, transparent 1.1px), linear-gradient(to right, #040438 1.1px, #000006 1.1px);
+	background-size: 22px 22px;
+  padding: 20px;
+  border-radius: 12px;
+  backdrop-filter: blur(6px); /* bonito efecto en fondos oscuros */
+  width: 850px;
+height:650px;
+  position: relative;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,25%);
+    font-family:'Roboto', sans-serif;
+  text-align:center;
+  color:#F2F4F7;
+  box-shadow: 0px 10px 20px 10px rgba(0, 0, 0, 0.6);
+}
+.container .wrapper{
+  width: 750px;
+height:450px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+  margin: 5rem auto;
+  overflow: hidden;
+  border-radius:6px;
+}
+.container .wrapper-holder{
+  display: grid;
+  grid-template-columns: repeat(4, 100%);
+  height: 100%;
+  width: 100%;
+  animation: slider 20s ease-in-out infinite alternate;
+}
+
+.sizeImage{
+width:750px;
+height:450px;
+}
+
+
+
+@keyframes slider{
+  0%{transform: translateX(0%);}
+  10%{transform: translateX(0%);}
+  20%{transform: translateX(-100%);}
+  30%{transform: translateX(-100%);}
+  40%{transform: translateX(-100%);}
+  50%{transform: translateX(-200%);}
+  60%{transform: translateX(-200%);}
+  70%{transform: translateX(-200%);}
+  80%{transform: translateX(-300%);}
+  90%{transform: translateX(-300%);}
+  100%{transform: translateX(-300%);}
+}
+
+
+.divSecVideo{
+	box-shadow: 0px 10px 20px 10px rgba(0, 0, 0, 0.6);
+  font-family:'Roboto', sans-serif;
+  text-align:center;
+  color:#F2F4F7;
+  position:relative;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,40%);
+  	background-color: #000006;
+	background-image:  linear-gradient(#040438 1.1px, transparent 1.1px), linear-gradient(to right, #040438 1.1px, #000006 1.1px);
+	background-size: 22px 22px;
+  padding: 20px;
+  border-radius: 12px;
+  backdrop-filter: blur(6px); /* bonito efecto en fondos oscuros */
+  width: 850px;
+height:650px;
+}
+
+
+.videoMove{
+  background-color:black;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-40%);
+  width:750px;
+  height:450px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+  border-radius:6px;
+}
+
+h2{
+  font-family:'Roboto', sans-serif;
+}
+

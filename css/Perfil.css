@@ -1,0 +1,178 @@
+@charset "UTF-8";
+
+.body2{
+		background-image:url("Fondo3.webp");
+	background-size: cover; /* Image will cover the entire element */
+  background-repeat: no-repeat; /* Image will not repeat */
+  background-attachment: fixed; /* This makes the background image static */
+  margin-bottom:150px;
+}
+
+
+.hijo2{
+		font-family:fantasy;
+	font-size:18px;
+ position: absolute;      /* lo sacamos del flujo normal */
+  top: 50%;                /* movemos al centro verticalmente */
+  left: 50%;               /* movemos al centro horizontalmente */
+  transform: translate(-50%, -50%); /* centramos completamente */
+  width: 250px;
+  height: 60px;
+  background: #00006a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f4f4f4;
+  border-style:none;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+.mover-izquierda2{
+  left: 12%;               /* mueve hacia la izquierda */
+  transform: translate(-50%, -50%);	
+}
+
+.divPerfil{
+	background-color: #000006;
+	background-image:  linear-gradient(#040438 1.1px, transparent 1.1px), linear-gradient(to right, #040438 1.1px, #000006 1.1px);
+	background-size: 22px 22px;	
+	width:750px;
+	height:250px;
+	position:relative;
+	margin-top:3%;
+	margin-left:auto;
+	margin-right:auto;
+	border-radius:6px;
+	color:#f4f4f4;
+	font-family:'Roboto', sans-serif;
+}
+
+.editImagenPerfil{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	width:200px;
+	height:200px;
+	border-radius:6px;
+}
+
+.mover-izquierda3{
+  left: 18%;               /* mueve hacia la izquierda */
+  transform: translate(-50%, -50%);	
+}
+
+.h1Perfil{
+	position:absolute;
+	top:20%;
+	left:50%;
+	transform:translate(-20%,-50%);	
+}
+
+.tablePerfil{
+	width:425px;
+	height:240px;
+	position:relative;
+	top:50%;
+	left:50%;
+	transform:translate(-22%,-50%);
+	text-align:center;
+}
+
+
+
+.mover-derecha3{
+	left:60%;
+	transform:translate(-50%,-50%);
+}
+
+.divPerfil2{
+    background-color: #000006;
+	background-image:  linear-gradient(#040438 1.1px, transparent 1.1px), linear-gradient(to right, #040438 1.1px, #000006 1.1px);
+	background-size: 22px 22px;
+	width:950px;
+	height:300px;
+	position:relative;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,10%);
+	justify-items:center;
+	border-radius:6px;
+}
+
+.tableLang{
+	 border-collapse: separate; /* Esto asegura que los bordes de las celdas sean separados */
+     border-spacing: 15px; /* Establece el espacio entre las columnas y filas */
+     	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	width:860px;
+	height:250px;
+}
+
+.tdLang{
+	background-color:#c8c8c8;
+	height:250px;
+	text-align:center;
+	justify-content:center;
+		border-radius:3px;
+}
+
+.imgLang{
+	background-color:#b4b4b4;
+	border-radius:6px;
+	width:100px;
+	height:100px;
+	padding:10px;
+}
+
+.imgLang2{
+	background-color:#b4b4b4;
+	border-radius:6px;
+	width: 70px; 
+	height:100px;
+	padding-top:10px;
+	padding-bottom:10px; 
+	padding-right:12px; 
+	padding-left:12px;
+}
+
+
+.pLang{
+	font-family:'Fira code', monospace;
+	font-size:14px;
+	font-weight:600;
+}
+
+
+.divPerfil3{
+	background-color: #000006;
+	background-image:  linear-gradient(#040438 1.1px, transparent 1.1px), linear-gradient(to right, #040438 1.1px, #000006 1.1px);
+	background-size: 22px 22px;
+	width:950px;
+	height:375px;
+	position:relative;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,22%);
+	border-radius:6px;
+}
+
+.divDescript{
+	width:850px;
+	height:325px;
+	position:absolute;
+	color:#f4f4f4;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	text-align:left;
+	font-family:'Fira code', monospace;
+	font-size:14px;
+}
+
+
+
+

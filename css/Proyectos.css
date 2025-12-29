@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+.divExplicacion{
+	background: #1968bd;
+	background: linear-gradient(360deg,rgba(25, 104, 189, 1) 0%, rgba(87, 145, 207, 1) 35%, rgba(255, 250, 250, 1) 100%);
+	position:relative;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,15%);
+	width:700px;
+	height:280px;
+	text-align:left;
+	font-family:'Fira code', monospace;
+	padding:20px;
+	border-radius:6px;
+	 box-shadow: 15px 15px rgba(0,0,0,.15);
+}
+
+.divTitulo{
+	width:700px;
+	height:60px;
+	text-align:center;
+	font-family:'Roboto', sans-serif;
+	}
+
+.divProyecto{
+	background: #1968bd;
+	background: linear-gradient(180deg,rgba(25, 104, 189, 1) 0%, rgba(87, 145, 207, 1) 35%, rgba(255, 250, 250, 1) 100%);
+	width:740px;
+	height:100px;
+	position:relative;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,90%);
+	border-radius:6px;
+	box-shadow: 12px 12px rgba(0,0,0,.15);
+}
+
+.tableProyectos{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	width:700px;
+	height:80px;
+}
+
+.tdProyectos{
+	height:70px;
+	text-align:center;
+	justify-content:center;
+}
+
+.buttonProjects{
+	padding-top:15px;
+	padding-bottom:15px;
+	padding-left:25px;
+	padding-right:25px;
+	text-decoration:none;
+}
+
+
+
