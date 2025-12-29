@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+.body3{
+	background-image:url("Fondo3.webp");
+	background-size: cover; /* Image will cover the entire element */
+  background-repeat: no-repeat; /* Image will not repeat */
+  background-attachment: fixed; /* This makes the background image static */
+}
+
+
+.tableAbout{
+	width:900px;
+	height:400px;
+	position:relative;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,15%);
+	font-family:'Fira code', monospace;
+	font-size:22px;
+	color:#f4f4f4;
+}
+
+
+td{
+	text-align:left;
+	width:68%;
+	}
+	
+	
+.tdMod{
+	text-align:center;
+}
+
+.imgAbout{
+	width:200px;
+	height:200px;
+	border-radius:3px;
+}
+
+.h1About{
+	font-family:'Roboto', sans-serif;
+}
+
+
