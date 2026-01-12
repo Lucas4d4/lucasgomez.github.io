@@ -13,23 +13,42 @@
 </head>
 <body>
 
+  <header class="divCabecera">
+  <a class="logo" href="Perfil.html">
+    <img class="editImagen" src="contenido/FotoLucas.jpg" alt="Lucas">
+    <span>LUCAS GASTON GOMEZ</span>
+  </a>
 
-	<div class="divCabecera" style="height: 88px; ">
-	<a class="hijo mover-izquierda2" href="Perfil.html"><img class="editImagen" src="contenido/FotoLucas.jpg">&nbsp;&nbsp;LUCAS GASTON GOMEZ</a>
-	
-	<ul class="mover-derecha2">
-	<li><a href="index.html">HOME</a></li>
-	<li><a href="About.html">ABOUT</a></li>
-	<li><a href="Proyectos.html">PROJECTS</a></li>
-	<li><a href="Contact.html">CONTACT</a></li>
-	</ul>
-	</div>
+<!-- Botón Burger (solo móvil) -->
+
+    <!-- Menú de navegación -->
+   
+<nav>
+
+      <!-- The hamburger menu -->
+       <input type="checkbox" id="valido">
+      <label class="btnBurger" for="valido"><img src="contenido/menu-burger.svg" class="imgMenu"></label>
+      <ul>
+        <li class="liFirst"><a href="index.html">HOME</a></li>
+        <li><a href="Proyectos.html">PROJECTS</a></li>
+        <li><a href="About.html">ABOUT</a></li>
+        <li class="liLast"><a href="Contact.html">CONTACT</a></li>
+      </ul>
+
+    </nav>
+  </header>
 	
 	<div class="divRedes">
-	<button class="buttonRed designRed"><img class="editRed" src="contenido/linkedin.svg"></button>
-	<button class="buttonRed2 designRed"><img class="editRed" src="contenido/instagram.svg"></button>
-	<button class="buttonRed3 designRed"><img class="editRed" src="contenido/github.svg"></button>
-	<button class="buttonRed4 designRed"><img class="editRed" src="contenido/youtube.svg"></button>
+    <table class="tableRedes">
+      <tr class="trRedes">
+        <td class="tdRedes"><button class="buttonRed designRed"><img class="editRed" src="contenido/linkedin.svg"></button></td>
+        <td class="tdRedes"><button class="buttonRed designRed"><img class="editRed" src="contenido/instagram.svg"></button></td>
+        <td class="tdRedes"><button class="buttonRed designRed"><img class="editRed" src="contenido/github.svg"></button></td>
+        <td class="tdRedes"><button class="buttonRed designRed"><img class="editRed" src="contenido/youtube.svg"></button></td>
+      </tr>
+
+    </table>
+	
 	</div>
 	
 	<div class="divCentral">
@@ -41,5 +60,6 @@
 	<br>
 	<a class="buttonProjects" href="Proyectos.html">PROJECTS</a>
 	</div>
+
 </body>
 </html>
