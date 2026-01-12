@@ -384,13 +384,13 @@ nav input[type="checkbox"],
 	.logo {
     padding: 3px 8px 3px 8px;
 	position: relative;
-  transform: translateX(7%);
+  transform: translateX(15%);
   font-family: fantasy;
   font-size:1em;
   }  
 
   .logo:hover{
-    transform: translateX(7%) scale(1.1);
+    transform: translateX(15%) scale(1.1);
   }
 
 
@@ -524,4 +524,5 @@ li a:hover{
   .divRedes {
     flex-direction: row;
   }
+
 }
