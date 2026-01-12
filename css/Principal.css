@@ -20,32 +20,43 @@ body{
 }
 
 
-.divCabecera{
-	background-color:#ffffff;
-	position:relative; /* necesario para posicionar al hijo */
-	min-height: 120px;
-}
 
-.hijo {
-	font-family:fantasy;
-	font-size:1.1rem;
- position: absolute;      /* lo sacamos del flujo normal */
-  top: 50%;                /* movemos al centro verticalmente */
-  left: 50%;               /* movemos al centro horizontalmente */
-  transform: translate(-50%, -50%); /* centramos completamente */
-  width: 250px;
-  height: 60px;
-  background: #ffffff;
+.divCabecera {
+  background-color: #fff;
+  min-height: 88px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  color: #000000;
-  border-style:none;
-  border-radius:6px;
-  cursor:pointer;
-  	transition: all 0.3s ease-in-out;
-  	text-decoration:none;
+  justify-content: space-between;
+  padding: 0 5%;
 }
+
+
+/* REEMPLAZA AL .hijo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  font-family: fantasy;
+  color: #000;
+  transition-duration: 0.3s;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+.logo:hover{
+	background-color:#00006a;
+	color:#ffffff;
+	 transform: scale(1.05);
+}
+
+.logo:active{
+	background-color:#00006a;
+	color:#ffffff;
+	 transform: scale(1.0);	
+}
+
+
 
 /* 📍 Modificadores reutilizables */
 .mover-izquierda {
@@ -90,29 +101,27 @@ Cambiando solo left, lo puedes mover a la izquierda o derecha sin perder el cent
 }
 
 
-.hijo:hover{
+
+
+/* REEMPLAZA AL ul*/
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+/*
+.menu a {
+  padding: 12px 18px;
+  border-radius: 6px;
+  transition-duration: 0.3s;
+}
+
+.menu a:hover{
 	background-color:#00006a;
 	color:#ffffff;
-	 transform: translate(-50%,-50%) scale(1.05);
 }
 
-.hijo:active{
-	background-color:#00006a;
-	color:#ffffff;
-	 transform: translate(-50%,-50%) scale(1.0);	
-}
-
-
-
-ul{
-	display:flex;
-	list-style-type:none;
-	gap:10px;
-	position:absolute;
-	top:50%;
-	left:50%;
-	 transform: translate(-50%, -50%); 
-}
 
 li{
 	border-radius:6px;
@@ -129,7 +138,7 @@ li a{
 	font-size:1.1rem;
 	font-style:normal;
 	padding:15px 20px;
-	border-radius:6px;
+	border-radius:6px 6px 0px 0px;
 	transition: all 0.3s ease-in-out;
 }
 
@@ -137,96 +146,90 @@ li a:hover{
 	background-color:#00006a;
 	color:#ffffff;
 }
+*/
+
+.divRedes {
+  position: fixed;
+  left: 0;
+  top: 30%;
+  width: 55px;
+  height:250px;
+  background-color: #ffffff;   /* 👈 COLOR RESTAURADO */
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  z-index: 1000;
+}
 
 
-.divRedes{
-	background-color:#ffffff;
-	color:#000000;
-	width:55px;
-	height:250px;
-	position:fixed;
-	top:30%;
-	left:0;
-	border-top-right-radius:6px;
-	border-bottom-right-radius:6px;
+
+.designRed {
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.designRed:hover {
+  background-color: #c9c9c9;
+  transform: scale(1.1);
+}
+
+.editRed {
+  width: 24px;
+  height: 24px;
 }
 
 .buttonRed{
-	position:absolute;
-	top:15%;
-	left:50%;
-	 transform: translate(-50%, -50%);
 	 cursor:pointer;
 	 border-style:none;
 	 border-radius:6px;
+	 transition-duration: 0.3s;
+}
+
+.buttonRed:hover{
+transform:  scale(1.1);
+background-color: #c9c9c9;
 }
 
 
-.designRed{
-	width:35px;
-	height:35px;
-	background-color:#ffffff;
-		margin:0;
-	padding:0;
-		align-items:center;
-	justify-content:center;
-	display:flex; /* USA flex PARA CENTRAR VERTICAL Y HORIZONTALMENTE */
-	padding:20px;
-	transition: all 0.3s ease-in-out;
+ .tdRedes{
+    position: relative;
+    justify-items: center;
 
-}
+  }
 
-.designRed:hover{
-	background-color:#c9c9c9;
-	transform: translate(-50%,-50%) scale(1.1);
-}
+  .trRedes{
+      display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap:20px;
+  }
 
-
-.editRed{
-	width:30px;
-	height:30px;
-	display:block; /* SIRVE PARA QUE margin: auto FUNCIONE */
-	margin:0 auto; /* CENTRA LA IMAGEN HORIZONTALMENTE */
-}
-
-.buttonRed2{
-	position:absolute;
-	top:38%;
-	left:50%;
-	 transform: translate(-50%, -50%);
-	 cursor:pointer;
-	 border-style:none;
-	 border-radius:6px;	
+.tableRedes{
+  position: relative;
+  margin:0;
+  padding:0;
+  width: 100%;
 }
 
 
 
-.buttonRed3{
-	position:absolute;
-	top:62%;
-	left:50%;
-	 transform: translate(-50%, -50%);
-	 cursor:pointer;
-	 border-style:none;
-	 border-radius:6px;	
-}
-
-.buttonRed4{
-	position:absolute;
-	top:85%;
-	left:50%;
-	 transform: translate(-50%, -50%);
-	 cursor:pointer;
-	 border-style:none;
-	 border-radius:6px;	
-}
 
 
 .divCentral{
 	font-family:'Roboto', sans-serif;
 	font-size:1.1rem;
 	position:absolute;
-	top:55%;
+	top:50%;
 	left:50%;
 	transform:translate(-50%,-50%);
 	max-width:700px;
@@ -246,7 +249,7 @@ p{
 	border-radius:4px;
 	border:none;
 	cursor:pointer;
-	transition: all 0.3s ease-in-out;
+	transition: 0.3s;
 	font-family:fantasy;
 	text-decoration:none;
 	color:#000000;
@@ -255,7 +258,7 @@ p{
 .buttonProjects:hover{
 	background-color:#000000;
 	color:#fac205;
-	transform:scale(1.05);
+	transform:scale(1.1);
 }
 
 .buttonProjects:active{
@@ -265,45 +268,250 @@ p{
 }
 
 
+.btnBurger{
+  display: none;
+  background-color:#fac205;
+}
+
+.imgMenu{
+	width:26px;
+	height:26px;
+}
+
+ul{
+    display: flex;
+  list-style: none;
+  gap: 10px;
+  justify-content: center;
+  position: relative;
+  transform: translate(-10%,80%);
+}
+
+li{
+  display: inline-block;
+  margin-right: 5%;
+}
+
+li a{
+	text-decoration:none;
+	background-color:#ffffff;
+	color:#000000;
+	font-family:fantasy;
+	font-size:1.1rem;
+	font-style:normal;
+	padding:15px 20px;
+	border-radius:6px 6px 0px 0px;
+	transition: all 0.3s ease-in-out;
+}
+
+li a:hover{
+	background-color:#00006a;
+	color:#ffffff;
+}
+
+
+
+nav input[type="checkbox"],
+    nav button {
+      display: none;
+    }
+
+
 /* ================================================= */
 /* 📱 MOBILE (hasta 768px) */
 /* ================================================= */
 @media (max-width: 768px) {
 
-  body {
-    background-attachment: scroll;
+  .divRedes {
+    top: auto;
+    bottom: 0;
+    left:50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 60px;
+    justify-content: center;
+    border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+  border-bottom-right-radius: 0px;
   }
 
-  ul {
-    position: static;
-    transform: none;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 0;
+  .tdRedes{
+    position: relative;
+    justify-items: center;
+
   }
 
-  .divCabecera {
-    padding: 10px 0;
+  .trRedes{
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap:25px;
+  justify-content: center;
   }
+
+
+.tableRedes{
+  position: relative;
+  margin:0;
+  padding:0;
+  width: 100%;
+}
+
+
+
+  
+ .divCabecera {
+    padding: 15px 0;
+	 flex-direction: row;
+   gap:5px;
+  }
+
+ 
 
   .divCentral {
-    position: static;
-    transform: none;
-    margin: 40px auto;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
     width: 90%;
   }
 
-  .divRedes {
-    position: fixed;
-    bottom: 0;
-    top: auto;
-    width: 100%;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    border-radius: 0;
+  .buttonProjects:hover{
+    background-color: #000000;
+    color:#fac205;
   }
+
+
+	.logo {
+    padding: 5px 8px 5px 8px;
+	position: relative;
+  transform: translateX(10%);
+  }  
+
+  .logo:hover{
+    transform: translateX(10%) scale(1.1);
+  }
+
+
+/* MENÚ HAMBURGUESA */
+
+.btnBurger{
+          text-align: right;
+        display: block;
+        padding: 0.5em;
+        line-height: 1.6em;
+          position: relative;
+  transform: translateX(-50%);
+  z-index: 9999;
+  transition: 0.3s;
+  border-radius: 3px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px;
+  background-color: #ada4a4;
+}
+
+
+
+nav input[type="checkbox"]:not(:checked) ~ ul {
+        transform: translateX(200%);
+      }
+
+nav input[type="checkbox"]:checked ~ ul {
+        transform: translateX(0%);
+      }
+ 
+nav input[type="checkbox"]:checked ~ .btnBurger {
+        transform: translateX(0%);
+        transform:rotate(90deg);
+        background-color: #ffffff;
+      }
+
+nav input[type="checkbox"]:not(:checked) ~ .btnBurger {
+        transform: translate(-50%);
+      }
+
+ul{
+  display: block;
+  position: fixed;
+  right: 0;
+  top:3%;
+  left:50%;
+  background-color: #fff;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  z-index: 9998;
+  text-align: left;
+    flex-direction: column;
+    margin:0;
+    padding:0;
+    transition:0.3s;
+}
+
+
+
+ul li{
+  width:100%;
+  list-style-type: none;
+    margin:0;
+    padding: 0;
+    text-align: center;
+
+}
+
+.liFirst{
+  margin-top:40%;
+}
+
+.liLast{
+  margin-bottom: 40%;
+
+}
+
+
+li a{
+  display: block;
+	text-decoration:none;
+	background-color:#fff;
+  border-radius: 0%;
+	color:#000000;
+	font-family:fantasy;
+	font-size:1.1rem;
+	font-style:normal;
+	padding:16px 20px;
+  box-sizing: border-box; /* SIRVE PARA EVITAR DESBORDE */
+	transition: 0.3s;
+}
+
+li a:hover{
+	background-color:#00006a;
+	color:#ffffff;
+}
+
+
+
+      /*
+      nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 0;
+        margin-right: 0;
+        left: 45%;
+        transform: translate(-50%,-150%);
+      }
+      */
+
+
+
+
+.imgMenu{
+	width:26px;
+	height:26px;
+  display: flex;
+  align-self: center;
+}
+
+
+
 }
 
 /* ================================================= */
@@ -311,11 +519,7 @@ p{
 /* ================================================= */
 @media (min-width: 769px) and (max-width: 1024px) {
 
-  .divCentral {
-    max-width: 600px;
-  }
-
-  ul {
-    gap: 15px;
+  .divRedes {
+    flex-direction: row;
   }
 }
