@@ -14,21 +14,36 @@
 </head>
 <body>
 
-<div class="divCabecera" style="height: 88px; ">
-	<a class="hijo mover-izquierda2" href="Perfil.html"><img class="editImagen" src="contenido/FotoLucas.jpg">&nbsp;&nbsp;LUCAS GASTON GOMEZ</a>
-	
-	<ul class="mover-derecha2">
-	<li><a href="index.html">HOME</a></li>
-	<li><a href="About.html">ABOUT</a></li>
-	<li><a href="Proyectos.html">PROJECTS</a></li>
-	<li><a href="Contact.html">CONTACT</a></li>
-	</ul>
-</div>
+  <header class="divCabecera">
+  <a class="logo" href="Perfil.html">
+    <img class="editImagen" src="contenido/FotoLucas.jpg" alt="Lucas">
+    <span>MI PERFIL</span>
+  </a>
+
+<!-- Botón Burger (solo móvil) -->
+
+    <!-- Menú de navegación -->
+   
+<nav>
+
+      <!-- The hamburger menu -->
+       <input type="checkbox" id="valido">
+      <label class="btnBurger" for="valido"><img src="contenido/menu-burger.svg" class="imgMenu"></label>
+      <ul>
+        <li class="liFirst"><a href="index.html">HOME</a></li>
+        <li><a href="Proyectos.html">PROJECTS</a></li>
+        <li><a href="About.html">ABOUT</a></li>
+        <li class="liLast"><a href="Contact.html">CONTACT</a></li>
+      </ul>
+
+    </nav>
+  </header>
 
 <div class="divExplicacion">
 <div class="divTitulo">
 <h1>PROYECTOS UNIVERSITARIOS</h1>
 </div>
+<br>
 <p>
 Estos proyectos fueron realizados durante el cursado de la carrera Técnico
 Universitario en Programación.
@@ -40,11 +55,21 @@ proyectos es un script de creación de base de datos.
 Cada uno de los proyectos están subidos en diferentes enlaces de Google
 Drive y GitHub para que puedan ser visualizados.
 </p>
-
 </div>
 
+
 <div class="divProyecto">
-<table class="tableProyectos">
+	<table class="tableProyectos">
+		<tr>
+			<td class="tdProyectos"><button class="buttonProjects">Proyecto 1</button></td>
+			<td class="tdProyectos"><button class="buttonProjects">Proyecto 2</button></td>
+			<td class="tdProyectos"><button class="buttonProjects">Proyecto 3</button></td>
+			<td class="tdProyectos"><button class="buttonProjects">Proyecto 4</button></td>
+		</tr>
+
+	</table>
+<!--
+	<table class="tableProyectos">
 <tr>
 <td class="tdProyectos"><a class="buttonProjects" href="Proyecto1.html">PROYECTO 1</a></td>
 <td class="tdProyectos"><a class="buttonProjects" href="Proyecto2.html">PROYECTO 2</a></td>
@@ -52,10 +77,12 @@ Drive y GitHub para que puedan ser visualizados.
 <td class="tdProyectos"><a class="buttonProjects" href="Proyecto4.html">PROYECTO 4</a></td>
 </tr>
 
-</table>
+</table>	
+-->
 </div>
+
+
 	
 
 </body>
-
 </html>
