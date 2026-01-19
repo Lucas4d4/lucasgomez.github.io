@@ -5,19 +5,19 @@
 	background-size: cover; /* Image will cover the entire element */
   background-repeat: no-repeat; /* Image will not repeat */
   background-attachment: fixed; /* This makes the background image static */
+  min-height: 100vh;
 }
 
 
 .tableAbout{
-	width:900px;
-	height:400px;
+	max-width:900px;
+	width:90%;
 	position:relative;
 	top:50%;
 	left:50%;
 	transform:translate(-50%,15%);
-	font-family:'Fira code', monospace;
-	font-size:22px;
 	color:#f4f4f4;
+	padding: 15px 10px 15px 10px;
 }
 
 
@@ -38,7 +38,25 @@ td{
 }
 
 .h1About{
-	font-family:'Roboto', sans-serif;
+	font-family:'Poppins', sans-serif;
 }
 
+p{
+	font-size: 1.4rem;
+}
 
+@media (max-width:768px){
+	.tableAbout{
+		display: flex;
+		padding: 10px 5px 10px 5px;
+		transform:translate(-50%,20%);
+	}
+
+p{
+	font-size: 1.2rem;
+}
+
+	.tdMod{
+		display:none;
+	}
+}
