@@ -6,41 +6,43 @@
 	position:relative;
 	top:50%;
 	left:50%;
-	transform:translate(-50%,15%);
+	transform:translate(-50%,20%);
 	max-width:700px;
 	width:90%;
 	text-align:left;
-	font-family:'Fira code', monospace;
-	font-size:1rem;
 	padding:20px;
 	border-radius:6px;
 	 box-shadow: 15px 15px rgba(0,0,0,.15);
 }
 
+
+
+
 .divTitulo{
 	max-width:700px;
-	width: 90%;
 	text-align:center;
-	font-family:'Roboto', sans-serif;
-	font-size:16px;
+	font-family:'Poppins', sans-serif;
+	font-size: 1.1rem;
 	}
 
 .divProyecto{
 	background: #1968bd;
 	background: linear-gradient(180deg,rgba(25, 104, 189, 1) 0%, rgba(87, 145, 207, 1) 35%, rgba(255, 250, 250, 1) 100%);
-	max-width:740px;
+	max-width:800px;
 	width:90%;
 	position:relative;
 	top:50%;
 	left:50%;
-	transform:translate(-50%,90%);
+	transform:translate(-50%,150%);
 	border-radius:6px;
-	box-shadow: 12px 12px rgba(0,0,0,.15);
+	box-shadow: 8px 8px rgba(0,0,0,.15);
+	justify-items: center;
+	padding: 15px 10px 15px 10px;
 }
 
 .tableProyectos{
 	position:relative;
-	max-width:700px;
+	max-width:780px;
 	width: 100%;
 }
 
@@ -50,10 +52,7 @@
 }
 
 .buttonProjects{
-	padding-top:15px;
-	padding-bottom:15px;
-	padding-left:25px;
-	padding-right:25px;
+	padding: 10px 20px 10px 20px;
 	text-decoration:none;
 }
 
@@ -70,6 +69,10 @@
 	border-radius:6px;
 	 box-shadow: 5px 5px rgba(0,0,0,.15);
 	 
+	}
+
+	p{
+		font-size:1rem;
 	}
 
 	.divTitulo{
@@ -115,7 +118,7 @@
 	}
 
 	.buttonProjects{
-	font-size: 1.1rem;
+	font-size: 0.8rem;
 	padding: 10px 15px 10px 15px;
 	text-decoration:none;
 }
