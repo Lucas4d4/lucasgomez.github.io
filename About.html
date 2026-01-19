@@ -10,33 +10,50 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <!-- Estilo de fuente: 'Roboto' -->
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
 <title>About</title>
 </head>
 <body class="body3">
-<div class="divCabecera" style="height: 88px; ">
-	<a class="hijo mover-izquierda2" href="Perfil.html"><img class="editImagen" src="contenido/FotoLucas.jpg">&nbsp;&nbsp;LUCAS GASTON GOMEZ</a>
-	
-	<ul class="mover-derecha2">
-	<li><a href="index.html">HOME</a></li>
-	<li><a href="About.html">ABOUT</a></li>
-	<li><a href="Proyectos.html">PROJECTS</a></li>
-	<li><a href="Contact.html">CONTACT</a></li>
-	</ul>
-</div>
+<header class="divCabecera">
+  <a class="logo" href="Perfil.html">
+    <img class="editImagen" src="contenido/FotoLucas.jpg" alt="Lucas">
+    <span>MI PERFIL</span>
+  </a>
+
+<!-- Botón Burger (solo móvil) -->
+
+    <!-- Menú de navegación -->
+   
+<nav>
+
+      <!-- The hamburger menu -->
+       <input type="checkbox" id="valido">
+      <label class="btnBurger" for="valido"><img src="contenido/menu-burger.svg" class="imgMenu"></label>
+      <ul>
+        <li class="liFirst"><a href="index.html">HOME</a></li>
+        <li><a href="Proyectos.html">PROJECTS</a></li>
+        <li><a href="About.html">ABOUT</a></li>
+        <li class="liLast"><a href="Contact.html">CONTACT</a></li>
+      </ul>
+
+    </nav>
+  </header>
 
 <table class="tableAbout">
 <tr>
 <td>
 <h1 class="h1About">About Me</h1> 
 <br>
+<p>
 Técnico Universitario en Programación, con formación en lógica de programación, bases de datos y desarrollo web.
 <br><br>
 Actualmente desarrollo sitios web estáticos optimizados con HTML5, CSS y JavaScript con el 
-<br>
 objetivo de seguir creciendo como programador junior.
 <br><br>
 Para formularios de contacto utilizo servicios externos como Formspree.
+</p>
+
 </td>
 
 <td class="tdMod">
@@ -49,5 +66,4 @@ Para formularios de contacto utilizo servicios externos como Formspree.
 
 
 </body>
-
 </html>
