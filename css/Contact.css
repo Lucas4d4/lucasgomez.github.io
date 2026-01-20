@@ -1,47 +1,39 @@
 @charset "UTF-8";
 
-.body4{
-	background-image:url("Fondo3.webp");
-	background-size:cover;
-	background-repeat:no-repeat;
-	background-attachment:fixed;
-}
+
 
 .divForm{
 	background-color: #000033;
 	background-image:  linear-gradient(#040438 1.1px, transparent 1.1px), linear-gradient(to right, #040438 1.1px, #000006 1.1px);
 	background-size: 22px 22px;	
-	width:500px;
-	height:450px;
-	position:relative;
+	max-width:500px;
+	width:90%;
+	position:absolute;
 	top:50%;
 	left:50%;
-	transform:translate(-50%,12%);
+	transform:translate(-50%,-40%);
+	padding: 5px 10px 5px 10px;
+	justify-items: center;
 }
 
 
 .tableForm{
-	width:450px;
-	height:400px;
-	position:absolute;
-	top:50%;
-	left:50%;
-	transform:translate(-50%,-50%);
-	font-family:'Fira code', monospace;
-	font-size:24px;
-	text-shadow: 2px 2px 4px #888;
+	font-family:'Poppins', sans-serif;
+	color:#f8f8f8;
+	border-spacing: 0 10px; /* Horizontal | Vertical */
 }
 
-td{
+
+.tableForm td{
 	text-align:center;
 }
 
 .textGeneral{
-	font-family:'Fira code', monospace;
-	font-size:14px;
+	font-family:'Roboto', Arial, sans-serif;
+	font-size:1.2rem;
 	border-radius:3px;
-	width:350px;
 	padding:5px 10px 5px 10px;
+	width: 100%;
 	border-style:none;
 	transition-duration:all 0.3s ease-in-out;
 	background-color:#f8f8f8;
@@ -57,13 +49,14 @@ td{
 
 
 .btnEnviar{
-	font-family:'Fira code', monospace;
-	font-size:16px;
+	font-family:'Audiowide', cursive;
+  	text-transform: uppercase;
+	text-decoration:none;
 	background-color:#e8e8e8;
 	border-radius:3px;
 	border-style:none;
 	cursor:pointer;
-	padding:6px 9px 6px 9px;
+	padding:8px 5px 8px 5px;
 	transition-duration:0.3s;
 }
 
@@ -73,8 +66,39 @@ td{
 	transform:scale(1.1);
 }
 
-.h1Contact{
-	font-family:'Roboto', sans-serif;
-	color:#e0e0e0;
+@media (max-width:768px){
+	.divForm{
+	transform:translate(-50%,-40%);
+	padding: 5px;
+	}
+
+	.textGeneral{
+	font-family:'Roboto', Arial, sans-serif;
+	font-size:1rem;
+	border-radius:3px;
+	padding:5px;
+	width: 100%;
+	border-style:none;
+	transition-duration:all 0.3s ease-in-out;
+	background-color:#f8f8f8;
+	}
+
+	.btnEnviar{
+	font-family:'Audiowide', cursive;
+  	text-transform: uppercase;
+	text-decoration:none;
+	font-size: 0.9rem;
+	background-color:#e8e8e8;
+	border-radius:3px;
+	border-style:none;
+	cursor:pointer;
+	padding:6px 3px 6px 3px;
+	transition-duration:0.3s;
+	}
+
+	.tableForm h1{
+		font-size: 1.5rem;
+	}
 }
+
 
