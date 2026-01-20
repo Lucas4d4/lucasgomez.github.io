@@ -21,7 +21,7 @@
 }
 
 
-td{
+.tableAbout td{
 	text-align:left;
 	width:68%;
 	}
@@ -37,11 +37,11 @@ td{
 	border-radius:3px;
 }
 
-.h1About{
+.tableAbout h1{
 	font-family:'Poppins', sans-serif;
 }
 
-p{
+.tableAbout p{
 	font-size: 1.4rem;
 }
 
@@ -49,15 +49,14 @@ p{
 	.tableAbout{
 		display: flex;
 		padding: 10px 5px 10px 5px;
-		transform:translate(-50%,15%);
+		transform:translate(-50%,20%);
 	}
 
-p{
+.tableAbout p{
 	font-size: 1.2rem;
 }
 
 	.tdMod{
 		display:none;
 	}
-
 }

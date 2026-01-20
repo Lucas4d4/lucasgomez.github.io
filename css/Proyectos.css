@@ -15,15 +15,13 @@
 	 box-shadow: 15px 15px rgba(0,0,0,.15);
 }
 
+.divExplicacion h1{
+	text-align: center;
+font-family:'Poppins', sans-serif;
+}
 
 
 
-.divTitulo{
-	max-width:700px;
-	text-align:center;
-	font-family:'Poppins', sans-serif;
-	font-size: 1.1rem;
-	}
 
 .divProyecto{
 	background: #1968bd;
@@ -75,11 +73,10 @@
 		font-size:1rem;
 	}
 
-	.divTitulo{
-		text-align: center;
-		width:100%;
-		font-size: 0.8rem;
+	.divExplicacion h1{
+		font-size: 1.3rem;
 	}
+
 
 	.divProyecto{
 	background: #1968bd;
