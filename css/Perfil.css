@@ -1,124 +1,129 @@
 @charset "UTF-8";
 
-.body2{
-		background-image:url("Fondo3.webp");
-	background-size: cover; /* Image will cover the entire element */
-  background-repeat: no-repeat; /* Image will not repeat */
-  background-attachment: fixed; /* This makes the background image static */
-  margin-bottom:150px;
-}
 
-
-.hijo2{
-		font-family:fantasy;
-	font-size:18px;
- position: absolute;      /* lo sacamos del flujo normal */
-  top: 50%;                /* movemos al centro verticalmente */
-  left: 50%;               /* movemos al centro horizontalmente */
-  transform: translate(-50%, -50%); /* centramos completamente */
-  width: 250px;
-  height: 60px;
-  background: #00006a;
+.mainMod{
   display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #f4f4f4;
-  border-style:none;
-  border-radius:6px;
-  cursor:pointer;
+  flex-direction: column;   /* divs uno abajo del otro */
+  align-items: center;      /* centra horizontalmente */ 
+  min-height: calc(100vh - 88px); /* 88px: altura del header */ /* ocupa toda la altura de la pantalla */
+  gap: 50px;
+  padding-top:clamp(1rem, 5vh, 4rem);;
+  padding-bottom: 2rem;
 }
 
-.mover-izquierda2{
-  left: 12%;               /* mueve hacia la izquierda */
-  transform: translate(-50%, -50%);	
+/* UTILIZAR justify-content center CUANDO SE NECESITE CENTRAR VERTICALMENTE
+   Y CUANDO EL main PUEDE CONTENER UNA CANTIDAD VARIABLE (INDEFINIDA) DE CONTENIDO.
+   SI SE UTILIZAN MÁS DE DOS divs, CONVIENE ELIMINAR EL justify-content: center
+*/
+
+
+
+.content { 
+	grid-area: content; 
 }
+
+.footer  { 
+	grid-area: footer; 
+}
+
+
+
+
+
+
+.logo{
+	background-color:#0f172a;
+	color:#f8fafc;
+	cursor:default;
+}
+
+.logo:hover{
+	transform: none;
+}
+
+.lgo:active{
+	transform:none;
+}
+
+/*
+Titulos color: #f8fafc
+Texto color: #cbd5e1
+
+Botones, links, detalles color de fondo: #818cf8
+
+display:flex -> SIRVE PARA LOS divs QUE CONTENGAN ADENTRO ELEMENTOS COMO table, grid, layout
+display:block -> SIRVE PARA LOS divs QUE CONTENGAN SOLO TEXTO
+
+*/
 
 .divPerfil{
-	background-color: #000006;
-	background-image:  linear-gradient(#040438 1.1px, transparent 1.1px), linear-gradient(to right, #040438 1.1px, #000006 1.1px);
-	background-size: 22px 22px;	
-	width:750px;
-	height:250px;
-	position:relative;
-	margin-top:3%;
-	margin-left:auto;
-	margin-right:auto;
+	background-color: #1e293b;
+	border:1px solid #27354d;
+	max-width:750px;
+	width:90%;
 	border-radius:6px;
-	color:#f4f4f4;
-	font-family:'Roboto', sans-serif;
+	color:#f8fafc;
+	font-family:'Poppins', sans-serif;
+	font-size:14px;
+	padding:15px 10px 10px 10px;
+	margin:0;
+	box-shadow:0 10px 25px rgba(0,0,0,0.3);
+	z-index: 1;
+	justify-self: center;
 }
+
+
+
 
 .editImagenPerfil{
-	position:absolute;
-	top:50%;
-	left:50%;
-	transform:translate(-50%,-50%);
-	width:200px;
-	height:200px;
+	width:160px;
+	height:160px;
 	border-radius:6px;
-}
-
-.mover-izquierda3{
-  left: 18%;               /* mueve hacia la izquierda */
-  transform: translate(-50%, -50%);	
-}
-
-.h1Perfil{
-	position:absolute;
-	top:20%;
-	left:50%;
-	transform:translate(-20%,-50%);	
+	border-radius: 2px;
+	border-style: solid;
+	border-color:#f8fafc;
 }
 
 .tablePerfil{
-	width:425px;
-	height:240px;
-	position:relative;
-	top:50%;
-	left:50%;
-	transform:translate(-22%,-50%);
-	text-align:center;
+	width:100%;
 }
 
 
-
-.mover-derecha3{
-	left:60%;
-	transform:translate(-50%,-50%);
+.tablePerfil td{
+	text-align: center;
 }
+
+
 
 .divPerfil2{
-    background-color: #000006;
-	background-image:  linear-gradient(#040438 1.1px, transparent 1.1px), linear-gradient(to right, #040438 1.1px, #000006 1.1px);
-	background-size: 22px 22px;
-	width:950px;
-	height:300px;
-	position:relative;
-	top:50%;
-	left:50%;
-	transform:translate(-50%,10%);
-	justify-items:center;
+	background-color: #1e293b;
+	border:1px solid #27354d;
 	border-radius:6px;
+	max-width:850px;
+	width:90%;
+	margin:0;
+	box-shadow:0 10px 25px rgba(0,0,0,0.3);
+	justify-self: center;
 }
 
 .tableLang{
 	 border-collapse: separate; /* Esto asegura que los bordes de las celdas sean separados */
      border-spacing: 15px; /* Establece el espacio entre las columnas y filas */
-     	position:absolute;
-	top:50%;
-	left:50%;
-	transform:translate(-50%,-50%);
-	width:860px;
-	height:250px;
+     width: 100%;
+	
 }
 
-.tdLang{
+.tableLang td{
 	background-color:#c8c8c8;
-	height:250px;
 	text-align:center;
-	justify-content:center;
-		border-radius:3px;
+	border-radius:3px;
+	padding:10px 2px 10px 2px;
 }
+
+.tableLang p{
+	font-size:0.8rem;
+}
+
 
 .imgLang{
 	background-color:#b4b4b4;
@@ -128,51 +133,109 @@
 	padding:10px;
 }
 
-.imgLang2{
-	background-color:#b4b4b4;
-	border-radius:6px;
-	width: 70px; 
-	height:100px;
-	padding-top:10px;
-	padding-bottom:10px; 
-	padding-right:12px; 
-	padding-left:12px;
-}
 
 
-.pLang{
-	font-family:'Fira code', monospace;
-	font-size:14px;
-	font-weight:600;
-}
+/* MODIFICAR LOS position: absolute POR Grid. El display:grid VA EN UN main O body */
 
 
 .divPerfil3{
-	background-color: #000006;
-	background-image:  linear-gradient(#040438 1.1px, transparent 1.1px), linear-gradient(to right, #040438 1.1px, #000006 1.1px);
-	background-size: 22px 22px;
-	width:950px;
-	height:375px;
-	position:relative;
-	top:50%;
-	left:50%;
-	transform:translate(-50%,22%);
+	background-color: #1e293b;
+	border:1px solid #27354d;
 	border-radius:6px;
+	max-width:750px;
+	width:90%;
+	margin:0;
+	box-shadow:0 10px 25px rgba(0,0,0,0.3);
+	color:#f8fafc;
+	text-align: left;
+	padding:15px 20px 15px 20px;
+	z-index: 1;
 }
 
-.divDescript{
-	width:850px;
-	height:325px;
-	position:absolute;
-	color:#f4f4f4;
-	top:50%;
-	left:50%;
-	transform:translate(-50%,-50%);
-	text-align:left;
-	font-family:'Fira code', monospace;
-	font-size:14px;
+.divPerfil3 h1{
+	font-family:'Poppins', sans-serif;
+}
+
+.divPerfil3 p{
+font-size: 1.4rem;
 }
 
 
+
+@media (max-width:768px){
+
+
+
+.divPerfil{
+	font-size:0.5rem;
+	padding:15px 10px 10px 10px;
+	box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+
+.editImagenPerfil{
+	width:100px;
+	height:100px;
+}
+
+.divPerfil2{
+	margin:0;
+	box-shadow:0 10px 25px rgba(0,0,0,0.3);
+	padding: 15px 8px 15px 8px;
+	
+}
+ 
+
+
+.tableLang{
+	border-collapse: collapse;
+	display: grid;
+	position:relative;
+	width:100%;
+}
+
+.tableLang tr{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	gap:20px 10px;
+}
+
+
+.tableLang td{
+	padding:10px 2px 10px 2px;
+}
+/* MODIFICAR PADDINGs */
+.tableLang p{
+	font-size:0.6rem;
+}
+
+
+.imgLang{
+	background-color:#b4b4b4;
+	border-radius:6px;
+	width:60px;
+	height:60px;
+	padding:5px;
+}
+
+.divPerfil3{
+	margin:0;
+	box-shadow:0 10px 25px rgba(0,0,0,0.3);
+	color:#f8fafc;
+	text-align: left;
+	padding:15px 20px 15px 20px;
+	z-index: 1;
+}
+
+.divPerfil3 p{
+font-size: 0.8rem;
+}
+
+.divPerfil3 h1{
+	font-size:1rem;
+}
+
+
+}
 
 
