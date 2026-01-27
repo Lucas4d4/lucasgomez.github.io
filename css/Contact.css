@@ -1,11 +1,10 @@
 @charset "UTF-8";
-
+ 
 
 
 .divForm{
-	background-color: #000033;
-	background-image:  linear-gradient(#040438 1.1px, transparent 1.1px), linear-gradient(to right, #040438 1.1px, #000006 1.1px);
-	background-size: 22px 22px;	
+	background-color: #1e293b;
+	border:1px solid #27354d;	
 	max-width:500px;
 	width:90%;
 	position:absolute;
@@ -14,6 +13,7 @@
 	transform:translate(-50%,-40%);
 	padding: 5px 10px 5px 10px;
 	justify-items: center;
+	box-shadow:0 10px 25px rgba(0,0,0,0.3);
 }
 
 
@@ -61,7 +61,7 @@
 }
 
 .btnEnviar:hover{
-	background-color:#2020ff;
+	background-color:#1f1f92;
 	color:#e8e8e8;
 	transform:scale(1.1);
 }
