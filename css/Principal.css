@@ -6,10 +6,10 @@
 }
 
 body{
-	background-image:url('Fondo.webp');
+	background-color: #0f172a;
 	background-size: cover; /* Image will cover the entire element */
   background-repeat: no-repeat; /* Image will not repeat */
-  background-attachment:fixed; /*Sirve para que la imagen quede fija al momento de ir bajando */
+  background-attachment: fixed; /* This makes the background image static  */
   min-height: 100vh;
 }
 
@@ -22,12 +22,17 @@ body{
 
 
 .divCabecera {
-  background-color: #fff;
+  background-color: #f8fafc;
   min-height: 88px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 5%;
+  border-bottom:1px solid #e5e7eb;
+  position: sticky;
+  top:0;
+  z-index: 9999;
+  /* PONER z-index EN TODOS LOS DIVS CON position: absolute */
 }
 
 
@@ -46,14 +51,14 @@ body{
 }
 
 .logo:hover{
-	background-color:#00006a;
-	color:#ffffff;
+	background-color:#0f172a;
+	color:#f8fafc;
 	 transform: scale(1.05);
 }
 
 .logo:active{
-	background-color:#00006a;
-	color:#ffffff;
+	background-color:#0f172a;
+	color:#f8fafc;
 	 transform: scale(1.0);	
 }
 
@@ -155,7 +160,7 @@ li a:hover{
   top: 30%;
   width: 55px;
   height:250px;
-  background-color: #ffffff;   /* 👈 COLOR RESTAURADO */
+  background-color: #f8fafc;   /* 👈 COLOR RESTAURADO */
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
   display: flex;
@@ -171,7 +176,7 @@ li a:hover{
 .designRed {
   width: 40px;
   height: 40px;
-  background-color: #ffffff;
+  background-color: #f8fafc;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -225,7 +230,7 @@ background-color: #c9c9c9;
 
 
 
-
+  
 .divCentral{
 	font-family:'Roboto', sans-serif;
 	font-size:1.1rem;
@@ -236,6 +241,7 @@ background-color: #c9c9c9;
 	max-width:700px;
 	width:90%;
 	text-align:center;
+  color:#f8fafc;
 }
 
 .divCentral h1{
@@ -300,7 +306,7 @@ li{
 
 li a{
 	text-decoration:none;
-	background-color:#ffffff;
+	background-color:#f8fafc;
 	color:#000000;
 	font-family:'Audiowide', cursive;
   text-transform: uppercase;
@@ -312,8 +318,8 @@ li a{
 }
 
 li a:hover{
-	background-color:#00006a;
-	color:#ffffff;
+	background-color:#0f172a;
+	color:#f8fafc;
 }
 
 
@@ -341,7 +347,7 @@ nav input[type="checkbox"],
   border-top-left-radius: 6px;
   border-bottom-right-radius: 0px;
   }
-
+ 
   .tdRedes{
     position: relative;
     justify-items: center;
@@ -363,7 +369,7 @@ nav input[type="checkbox"],
   width: 100%;
 }
 
-
+ 
 
   
  .divCabecera {
@@ -433,7 +439,7 @@ nav input[type="checkbox"]:checked ~ ul {
 nav input[type="checkbox"]:checked ~ .btnBurger {
         transform: translateX(0%);
         transform:rotate(90deg);
-        background-color: #ffffff;
+        background-color: #f8fafc;
       }
 
 nav input[type="checkbox"]:not(:checked) ~ .btnBurger {
@@ -446,7 +452,7 @@ ul{
   right: 0;
   top:3%;
   left:50%;
-  background-color: #fff;
+  background-color: #f8fafc;
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
   z-index: 9998;
@@ -481,7 +487,7 @@ ul li{
 li a{
   display: block;
 	text-decoration:none;
-	background-color:#fff;
+	background-color:#f8fafc;
   border-radius: 0%;
 	color:#000000;
 	font-family:'Audiowide', cursive;
@@ -494,8 +500,8 @@ li a{
 }
 
 li a:hover{
-	background-color:#00006a;
-	color:#ffffff;
+	background-color:#0f172a;
+	color:#f8fafc;
 }
 
 
