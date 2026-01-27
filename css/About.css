@@ -1,13 +1,24 @@
 @charset "UTF-8";
 
-.body3{
-	background-image:url("Fondo3.webp");
-	background-size: cover; /* Image will cover the entire element */
-  background-repeat: no-repeat; /* Image will not repeat */
-  background-attachment: fixed; /* This makes the background image static */
-  min-height: 100vh;
+
+
+.logo{
+	background-color: #f8fafc;
+	color:#0f172a;
+	cursor:pointer;
 }
 
+.logo:hover{
+	background-color:#0f172a;
+	color:#f8fafc;
+	 transform: scale(1.05);
+}
+
+.lgo:active{
+	background-color:#0f172a;
+	color:#f8fafc;
+	 transform: scale(1.0);	
+}
 
 .tableAbout{
 	max-width:900px;
