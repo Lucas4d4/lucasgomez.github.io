@@ -8,22 +8,39 @@
 <!-- Estilos de fuentes de Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<!-- Estilo de fuente: 'Inter' -->
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+<!-- Estilo de fuente: 'Roboto' -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
 <title>Proyecto 3</title>
 </head>
-<body class="bodyProyectos">
-<div class="divCabecera" style="height: 88px; ">
-	<a class="hijo mover-izquierda2" href="Perfil.html"><img class="editImagen" src="contenido/FotoLucas.jpg">&nbsp;&nbsp;LUCAS GASTON GOMEZ</a>
-	
-	<ul class="mover-derecha2">
-	<li><a href="index.html">HOME</a></li>
-	<li><a href="About.html">ABOUT</a></li>
-	<li><a href="Proyectos.html">PROJECTS</a></li>
-	<li><a href="Contact.html">CONTACT</a></li>
-	</ul>
-</div>
-<br><br>
+<body>
+<header class="divCabecera">
+  <a class="logo" href="Perfil.html">
+    <img class="editImagen" src="contenido/FotoLucas.jpg" alt="Lucas">
+    <span>MI PERFIL</span>
+  </a>
+
+<!-- Botón Burger (solo móvil) -->
+ 
+    <!-- Menú de navegación -->
+   
+<nav>
+
+      <!-- The hamburger menu -->
+       <input type="checkbox" id="valido">
+      <label class="btnBurger" for="valido"><img src="contenido/menu-burger.svg" class="imgMenu"></label>
+      <ul>
+        <li class="liFirst"><a href="index.html">HOME</a></li>
+        <li><a href="Proyectos.html">PROJECTS</a></li>
+        <li><a href="About.html">ABOUT</a></li>
+        <li class="liLast"><a href="Contact.html">CONTACT</a></li>
+      </ul>
+
+    </nav>
+  </header>
+
+
+<main class="mainProyectosTotal">
 <div class="divExplicacion">
 <div class="divTitulos">
 <h1>PROYECTO 3: "Base de datos Juegos"</h1>
@@ -61,32 +78,29 @@ claves (Primarias o Foráneas) y las conexiones entre las tablas
 </p>
 </div>
 
-<!--
- 
-AGREGAR UN DIV CON COLOR DEGRADADO PARA LA MUESTRA DE LA TRANSICIÓN DE IMÁGENES
-
- -->
-
-<div class="container" style="transform:translate(-50%,20%);">
+<div class="container">
 <br>
 <h1>IMÁGENES DEL PROYECTO</h1>
     <div class="wrapper">
         <div class="wrapper-holder">
-          <div id="slider1"><img src="contenido/Imagenes Proyectos/Proyecto3/Proyecto3.png" class="sizeImage"></div>
-          <div id="slider2"><img src="contenido/Imagenes Proyectos/Proyecto3/Proyecto3_2.png" class="sizeImage"></div>
-          <div id="slider3"><img src="contenido/Imagenes Proyectos/Proyecto3/Proyecto3_3.png" class="sizeImage"></div>
-          <div id="slider4"><img src="contenido/Imagenes Proyectos/Proyecto3/Proyecto3_4.png" class="sizeImage"></div>
+          <div id="slider1"><img src="contenido/Proyecto3/Proyecto3.png" class="sizeImage"></div>
+          <div id="slider2"><img src="contenido/Proyecto3/Proyecto3_2.png" class="sizeImage"></div>
+          <div id="slider3"><img src="contenido/Proyecto3/Proyecto3_3.png" class="sizeImage"></div>
+          <div id="slider4"><img src="contenido/Proyecto3/Proyecto3_4.png" class="sizeImage"></div>
         </div>
     </div>
 
 </div>
-<br>
-<div class="divSecVideo">
+
+<div class="container">
 <br>
 <h1>VIDEO DEL PROYECTO</h1>
 <video class="videoMove" src="css/videoEjemplo.mp4" controls></video>
-
 </div>
+
+</main>
+
+
 
 </body>
 
