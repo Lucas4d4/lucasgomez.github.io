@@ -32,11 +32,11 @@ font-family:'Poppins', sans-serif;
 	position:relative;
 	top:50%;
 	left:50%;
-	transform:translate(-50%,150%);
+	transform:translate(-50%,120%);
 	border-radius:6px;
 	box-shadow:0 10px 25px rgba(0,0,0,0.3);
 	justify-items: center;
-	padding: 15px 10px 15px 10px;
+	padding: 30px 10px 30px 10px;
 }
 
 .tableProyectos{
@@ -51,9 +51,12 @@ font-family:'Poppins', sans-serif;
 }
 
 .buttonProjects{
-	padding: 10px 20px 10px 20px;
+	padding: 15px 20px 15px 20px;
 	text-decoration:none;
 }
+ 
+
+
 
 
 @media (max-width:768px) {
@@ -110,7 +113,7 @@ font-family:'Poppins', sans-serif;
 	.tableProyectos tr{
 		display: grid;
 		grid-template-columns: repeat(2,1fr);
-		gap:20px 0px;
+		gap:40px 0px;
 	}
 
 	.buttonProjects{
