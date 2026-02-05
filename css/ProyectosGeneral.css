@@ -12,9 +12,11 @@
 }
 
 
-
+.divCentrado{
+  text-align: center;
+}
   
-
+ 
 .divExplicacion{
   background-color: #1e293b;
 	border:1px solid #27354d;
@@ -36,6 +38,9 @@
 .divExplicacion h2{
   font-family:'Poppins', sans-serif;
 }
+
+
+
 
 
 
@@ -105,7 +110,7 @@ width:750px;
 height:450px;
 }
 
-
+ 
 
 @keyframes slider{
  0% { transform: translateX(0); }
